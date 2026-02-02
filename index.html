@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awami Afsar 🇵🇰</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <div class="main-container">
+        <header class="chat-header">
+            <div class="logo-area">
+                <span class="gov-icon">🏛️</span>
+                <div>
+                    <h1>Awami Afsar</h1>
+                    <p class="subtitle">Government Assistance Portal (by Muhammad Ali)</p>
+                </div>
+            </div>
+            <div class="beta-badge">BETA</div>
+        </header>
+
+        <div id="chat-window" class="chat-window">
+            <div class="message system-message">
+                <div class="avatar">🤖</div> <div class="bubble">
+                    <p><strong>Assalam-o-Alaikum! 🇵🇰</strong><br>I am Awami Afsar. How can I assist you with NADRA or Passport services today?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-wrapper">
+                <button id="mic-btn" class="icon-btn" title="Hold to record">
+                    🎤
+                </button>
+                <textarea id="user-input" placeholder="Ask about NADRA, Passport, or FBR..." rows="1"></textarea>
+                <button id="send-btn" class="icon-btn send-btn">
+                    ➤
+                </button>
+            </div>
+            <p id="status-text" class="status-text"></p>
+            <p class="disclaimer">Awami Afsar can make mistakes. Please verify important info.</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
